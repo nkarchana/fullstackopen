@@ -1,8 +1,10 @@
 const express = require("express");
 const morgan = require("morgan");
-const app = express();
 
+const app = express();
+app.use(express.static("dist"));
 app.use(express.json());
+
 const logData = (tokens, req, res) => {
   return [
     tokens.method(req, res),

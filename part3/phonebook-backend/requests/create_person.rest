@@ -1,7 +1,7 @@
-POST https://phonebook-dlth.onrender.com/api/persons
+POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "number": "123-456-7890"
+  "name": "Jane Doe",
+  "number": "5040-22334455"
 }
